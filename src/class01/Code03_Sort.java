@@ -29,7 +29,7 @@ public class Code03_Sort {
      * @param arr
      */
     public static void selectSort(int[] arr){
-        if(arr==null||arr.length==0||arr.length==1){
+        if(arr==null||arr.length<2){
             return;
         }
         for(int i=0; i<arr.length-1;i++){
@@ -47,7 +47,7 @@ public class Code03_Sort {
      * @param arr
      */
     public static void bubbleSort(int[] arr){
-        if(arr==null||arr.length==0||arr.length==1){
+        if(arr==null||arr.length<2){
             return;
         }
         for(int j=arr.length-1;j>0;j--){
@@ -65,7 +65,7 @@ public class Code03_Sort {
      * @param arr
      */
     public static void InsertSort(int[] arr){
-        if(arr==null||arr.length==0||arr.length==1){
+        if(arr==null||arr.length<2){
             return;
         }
         for(int i=1;i<arr.length;i++){
